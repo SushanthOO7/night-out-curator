@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+scripts/vm_gtfs.zip
+data/gtfs/
+
+# proposal doc (submitted to Canvas, not part of the code repo)
+CSE598_Capstone_Proposal_NightOutCurator.docx
+*.pdf
