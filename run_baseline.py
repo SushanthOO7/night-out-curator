@@ -1,4 +1,4 @@
-"""Run the BASELINE Night-Out Curator on one scenario and score it.
+"""testRun the BASELINE Night-Out Curator on one scenario and score it.
 
 Usage:
     python run_baseline.py --scenario examples/test1.json           # offline (bundled data)
