@@ -1,0 +1,14 @@
+{
+  "standard": [
+    {"name": "vegan_dinner_dessert", "request": "Vegan dinner and dessert near ASU at 7pm, chill, $40 per person.", "constraints": {"stop_types": ["dinner", "dessert"], "budget_pp": 40, "vegan_required": true, "target_hour": 19, "max_walk_m": 1200, "party_size": 4, "mood": "chill", "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "cheap_dinner_bar", "request": "Dinner then a lively bar at 8pm, $25 total.", "constraints": {"stop_types": ["dinner", "bar"], "budget_pp": 25, "vegan_required": false, "target_hour": 20, "max_walk_m": 1500, "party_size": 2, "mood": "lively", "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "three_stop_evening", "request": "Dinner, dessert, then a bar starting at 7pm, $50 total.", "constraints": {"stop_types": ["dinner", "dessert", "bar"], "budget_pp": 50, "vegan_required": false, "target_hour": 19, "max_walk_m": 1200, "party_size": 3, "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "dinner_only", "request": "Just a vegan dinner at 7pm, $20 total.", "constraints": {"stop_types": ["dinner"], "budget_pp": 20, "vegan_required": true, "target_hour": 19, "max_walk_m": 1200, "party_size": 2, "area": {"lat": 33.4255, "lon": -111.9400}}}
+  ],
+  "stress": [
+    {"name": "impossible_budget", "request": "Dinner and dessert for $5 total.", "expected_infeasible": true, "constraints": {"stop_types": ["dinner", "dessert"], "budget_pp": 5, "vegan_required": false, "target_hour": 19, "max_walk_m": 1200, "party_size": 2, "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "late_dessert", "request": "Dinner at 9pm followed by dessert at 11pm.", "expected_infeasible": true, "constraints": {"stop_types": ["dinner", "dessert"], "budget_pp": 50, "vegan_required": false, "target_hour": 21, "max_walk_m": 1200, "party_size": 2, "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "recover_bad_proposal", "request": "Dinner, dessert and a bar at 7pm.", "inject_bad_plan": true, "constraints": {"stop_types": ["dinner", "dessert", "bar"], "budget_pp": 50, "vegan_required": false, "target_hour": 19, "max_walk_m": 1200, "party_size": 3, "area": {"lat": 33.4255, "lon": -111.9400}}},
+    {"name": "page_timeout", "request": "Vegan dinner and dessert at 7pm; one venue page is unavailable.", "inject_failure": "pita_jungle", "constraints": {"stop_types": ["dinner", "dessert"], "budget_pp": 40, "vegan_required": true, "target_hour": 19, "max_walk_m": 2000, "party_size": 2, "area": {"lat": 33.4255, "lon": -111.9400}}}
+  ]
+}

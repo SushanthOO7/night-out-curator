@@ -1,0 +1,54 @@
+{
+  "tested_at": "2026-11-08T08:43:00.069164+00:00",
+  "requirement": {
+    "area": "tempe",
+    "cuisine": "indian",
+    "radius_m": 5000,
+    "limit": 10,
+    "party_size": 2,
+    "budget_pp": 40.0
+  },
+  "comparisons": [
+    {
+      "provider": "geoapify",
+      "status": "ok",
+      "returned_count": 7,
+      "fields_present": {
+        "address": 7,
+        "website": 4,
+        "regular_hours": 3,
+        "current_hours": 0,
+        "business_status": 0,
+        "price_guidance": 0,
+        "vegetarian_indicator": 0
+      },
+      "more_results_possible": false,
+      "latency_seconds": 2.45
+    },
+    {
+      "provider": "google",
+      "status": "ok",
+      "returned_count": 6,
+      "fields_present": {
+        "address": 6,
+        "website": 5,
+        "regular_hours": 6,
+        "current_hours": 6,
+        "business_status": 6,
+        "price_guidance": 5,
+        "vegetarian_indicator": 6
+      },
+      "more_results_possible": true,
+      "latency_seconds": 0.701
+    }
+  ],
+  "limitations": [
+    "One search per provider; no LLM or itinerary generation.",
+    "Geoapify category search vs Google text search with post-filtered radius; ranking differs.",
+    "Counts measure field availability, not correctness, completeness or business freshness.",
+    "Geoapify metrics describe our normalized adapter, not every possible provider field.",
+    "Price guidance is not an exact meal quote; vegetarian does not establish vegan suitability.",
+    "Budget and party size are recorded requirements, not guaranteed provider filters.",
+    "Raw Google place records are not saved or sent to the LLM; no photos/reviews requested."
+  ]
+}

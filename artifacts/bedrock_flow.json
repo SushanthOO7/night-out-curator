@@ -1,0 +1,760 @@
+{
+  "scenario": {
+    "name": "test1",
+    "request": "Plan a night out for 4 friends near ASU Tempe this Friday around 7pm. Keep it to about $40 per person total, we want somewhere chill and walkable, and one of us is vegan. Dinner plus one spot afterwards.",
+    "constraints": {
+      "budget_pp": 40,
+      "vegan_required": true,
+      "target_hour": 19,
+      "max_walk_m": 1200,
+      "max_transit_min": 20,
+      "party_size": 4,
+      "area": {
+        "lat": 33.4255,
+        "lon": -111.94
+      }
+    }
+  },
+  "candidates": [
+    {
+      "id": "pita_jungle",
+      "name": "Pita Jungle",
+      "category": "restaurant",
+      "cuisine": "mediterranean",
+      "lat": 33.4269,
+      "lon": -111.9401,
+      "website": "https://pitajungle.com",
+      "opening_hours": "Mo-Su 11:00-22:00"
+    },
+    {
+      "id": "green_vegetarian",
+      "name": "Green New American Vegetarian",
+      "category": "restaurant",
+      "cuisine": "vegan",
+      "lat": 33.4231,
+      "lon": -111.9256,
+      "website": "https://greenvegetarian.com",
+      "opening_hours": null
+    },
+    {
+      "id": "cornish_pasty",
+      "name": "Cornish Pasty Co",
+      "category": "restaurant",
+      "cuisine": "british",
+      "lat": 33.4225,
+      "lon": -111.9403,
+      "website": "https://cornishpastyco.com",
+      "opening_hours": "Mo-Su 11:00-24:00"
+    },
+    {
+      "id": "culinary_dropout",
+      "name": "Culinary Dropout",
+      "category": "restaurant",
+      "cuisine": "american",
+      "lat": 33.43,
+      "lon": -111.926,
+      "website": "https://culinarydropout.com",
+      "opening_hours": null
+    },
+    {
+      "id": "loco_patron",
+      "name": "Loco Patron",
+      "category": "restaurant",
+      "cuisine": "mexican",
+      "lat": 33.427,
+      "lon": -111.943,
+      "website": "https://locopatron.com",
+      "opening_hours": null
+    },
+    {
+      "id": "house_of_tricks",
+      "name": "House of Tricks",
+      "category": "restaurant",
+      "cuisine": "american",
+      "lat": 33.4245,
+      "lon": -111.938,
+      "website": "https://houseoftricks.com",
+      "opening_hours": "Tu-Sa 16:00-22:00"
+    },
+    {
+      "id": "chuckbox",
+      "name": "The Chuckbox",
+      "category": "restaurant",
+      "cuisine": "burger",
+      "lat": 33.423,
+      "lon": -111.936,
+      "website": "https://thechuckbox.com",
+      "opening_hours": null
+    },
+    {
+      "id": "snooze",
+      "name": "Snooze an A.M. Eatery",
+      "category": "restaurant",
+      "cuisine": "breakfast",
+      "lat": 33.4285,
+      "lon": -111.942,
+      "website": "https://snoozeeatery.com",
+      "opening_hours": "Mo-Su 06:30-14:30"
+    },
+    {
+      "id": "gelato_spot",
+      "name": "The Gelato Spot",
+      "category": "dessert",
+      "cuisine": "ice_cream",
+      "lat": 33.4265,
+      "lon": -111.9405,
+      "website": "https://thegelatospot.com",
+      "opening_hours": "Mo-Su 12:00-23:00"
+    },
+    {
+      "id": "cartel_coffee",
+      "name": "Cartel Coffee Lab",
+      "category": "cafe",
+      "cuisine": "coffee",
+      "lat": 33.4258,
+      "lon": -111.9402,
+      "website": "https://cartelroasting.co",
+      "opening_hours": null
+    },
+    {
+      "id": "caseys",
+      "name": "Casey Moore's Oyster House",
+      "category": "bar",
+      "cuisine": "pub",
+      "lat": 33.423,
+      "lon": -111.943,
+      "website": "https://caseymoores.com",
+      "opening_hours": "Mo-Su 11:00-02:00"
+    },
+    {
+      "id": "handlebar",
+      "name": "The Handlebar",
+      "category": "bar",
+      "cuisine": "bar",
+      "lat": 33.4272,
+      "lon": -111.9435,
+      "website": "https://handlebartempe.com",
+      "opening_hours": null
+    },
+    {
+      "id": "zipps",
+      "name": "Zipps Sports Grill",
+      "category": "bar",
+      "cuisine": "sports_bar",
+      "lat": 33.43,
+      "lon": -111.94,
+      "website": "https://zippssportsgrill.com",
+      "opening_hours": null
+    }
+  ],
+  "facts": {
+    "pita_jungle": {
+      "id": "pita_jungle",
+      "name": "Pita Jungle",
+      "category": "restaurant",
+      "cuisine": "mediterranean",
+      "lat": 33.4269,
+      "lon": -111.9401,
+      "website": "https://pitajungle.com",
+      "opening_hours": "Mo-Su 11:00-22:00",
+      "price_per_person": 18.0,
+      "close_hour": 22.0,
+      "vegan": true,
+      "vibe": [
+        "relaxed",
+        "casual",
+        "health-conscious"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://pitajungle.com"
+      }
+    },
+    "green_vegetarian": {
+      "id": "green_vegetarian",
+      "name": "Green New American Vegetarian",
+      "category": "restaurant",
+      "cuisine": "vegan",
+      "lat": 33.4231,
+      "lon": -111.9256,
+      "website": "https://greenvegetarian.com",
+      "opening_hours": null,
+      "price_per_person": 16.0,
+      "close_hour": 21.0,
+      "vegan": true,
+      "vibe": [
+        "casual",
+        "chill"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://greenvegetarian.com"
+      }
+    },
+    "cornish_pasty": {
+      "id": "cornish_pasty",
+      "name": "Cornish Pasty Co",
+      "category": "restaurant",
+      "cuisine": "british",
+      "lat": 33.4225,
+      "lon": -111.9403,
+      "website": "https://cornishpastyco.com",
+      "opening_hours": "Mo-Su 11:00-24:00",
+      "price_per_person": 15.0,
+      "close_hour": 24.0,
+      "vegan": true,
+      "vibe": [
+        "dark",
+        "cozy",
+        "quirky",
+        "cave-like"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://cornishpastyco.com"
+      }
+    },
+    "culinary_dropout": {
+      "id": "culinary_dropout",
+      "name": "Culinary Dropout",
+      "category": "restaurant",
+      "cuisine": "american",
+      "lat": 33.43,
+      "lon": -111.926,
+      "website": "https://culinarydropout.com",
+      "opening_hours": null,
+      "price_per_person": 30.0,
+      "close_hour": 23.0,
+      "vibe": [
+        "lively",
+        "trendy",
+        "loud"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://culinarydropout.com"
+      }
+    },
+    "loco_patron": {
+      "id": "loco_patron",
+      "name": "Loco Patron",
+      "category": "restaurant",
+      "cuisine": "mexican",
+      "lat": 33.427,
+      "lon": -111.943,
+      "website": "https://locopatron.com",
+      "opening_hours": null,
+      "price_per_person": 21.0,
+      "vegan": true,
+      "vibe": [
+        "lively",
+        "festive",
+        "rooftop"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://locopatron.com"
+      }
+    },
+    "house_of_tricks": {
+      "id": "house_of_tricks",
+      "name": "House of Tricks",
+      "category": "restaurant",
+      "cuisine": "american",
+      "lat": 33.4245,
+      "lon": -111.938,
+      "website": "https://houseoftricks.com",
+      "opening_hours": "Tu-Sa 16:00-22:00",
+      "price_per_person": 45.0,
+      "vibe": [
+        "romantic",
+        "quiet",
+        "date-night",
+        "upscale"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://houseoftricks.com"
+      }
+    },
+    "chuckbox": {
+      "id": "chuckbox",
+      "name": "The Chuckbox",
+      "category": "restaurant",
+      "cuisine": "burger",
+      "lat": 33.423,
+      "lon": -111.936,
+      "website": "https://thechuckbox.com",
+      "opening_hours": null,
+      "price_per_person": 12.0,
+      "close_hour": 21.0,
+      "vegan": false,
+      "vibe": [
+        "divey",
+        "casual"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://thechuckbox.com"
+      }
+    },
+    "snooze": {
+      "id": "snooze",
+      "name": "Snooze an A.M. Eatery",
+      "category": "restaurant",
+      "cuisine": "breakfast",
+      "lat": 33.4285,
+      "lon": -111.942,
+      "website": "https://snoozeeatery.com",
+      "opening_hours": "Mo-Su 06:30-14:30",
+      "price_per_person": 18.0,
+      "close_hour": 14.5,
+      "vegan": true,
+      "vibe": [
+        "bright",
+        "casual"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://snoozeeatery.com"
+      }
+    },
+    "gelato_spot": {
+      "id": "gelato_spot",
+      "name": "The Gelato Spot",
+      "category": "dessert",
+      "cuisine": "ice_cream",
+      "lat": 33.4265,
+      "lon": -111.9405,
+      "website": "https://thegelatospot.com",
+      "opening_hours": "Mo-Su 12:00-23:00",
+      "price_per_person": 7.0,
+      "close_hour": 23.0,
+      "vegan": true,
+      "vibe": [
+        "chill",
+        "dessert"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://thegelatospot.com"
+      }
+    },
+    "cartel_coffee": {
+      "id": "cartel_coffee",
+      "name": "Cartel Coffee Lab",
+      "category": "cafe",
+      "cuisine": "coffee",
+      "lat": 33.4258,
+      "lon": -111.9402,
+      "website": "https://cartelroasting.co",
+      "opening_hours": null,
+      "price_per_person": 6.0,
+      "close_hour": 22.0,
+      "vegan": true,
+      "vibe": [
+        "chill",
+        "quiet",
+        "hipster"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://cartelroasting.co"
+      }
+    },
+    "caseys": {
+      "id": "caseys",
+      "name": "Casey Moore's Oyster House",
+      "category": "bar",
+      "cuisine": "pub",
+      "lat": 33.423,
+      "lon": -111.943,
+      "website": "https://caseymoores.com",
+      "opening_hours": "Mo-Su 11:00-02:00",
+      "price_per_person": 15.0,
+      "close_hour": 26.0,
+      "vibe": [
+        "chill",
+        "laid-back",
+        "patio"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://caseymoores.com"
+      }
+    },
+    "handlebar": {
+      "id": "handlebar",
+      "name": "The Handlebar",
+      "category": "bar",
+      "cuisine": "bar",
+      "lat": 33.4272,
+      "lon": -111.9435,
+      "website": "https://handlebartempe.com",
+      "opening_hours": null,
+      "price_per_person": 12.5,
+      "close_hour": 26.0,
+      "vibe": [
+        "lively",
+        "loud",
+        "energetic"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://handlebartempe.com"
+      }
+    },
+    "zipps": {
+      "id": "zipps",
+      "name": "Zipps Sports Grill",
+      "category": "bar",
+      "cuisine": "sports_bar",
+      "lat": 33.43,
+      "lon": -111.94,
+      "website": "https://zippssportsgrill.com",
+      "opening_hours": null,
+      "price_per_person": 15.0,
+      "close_hour": 24.0,
+      "vibe": [
+        "sports bar",
+        "lively"
+      ],
+      "evidence": {
+        "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+        "url": "https://zippssportsgrill.com"
+      }
+    }
+  },
+  "plan": {
+    "stops": [
+      {
+        "venue_id": "pita_jungle"
+      },
+      {
+        "venue_id": "gelato_spot"
+      }
+    ],
+    "reasoning": "This itinerary meets all constraints: (1) Budget: Pita Jungle ($18pp) + Gelato Spot ($7pp) = $25pp total, well under the $40pp budget. (2) Vegan requirement: Both venues are vegan-friendly. (3) Timing: Pita Jungle is open until 22:00, Gelato Spot until 23:00, both accessible around 7pm arrival. (4) Walkability: Both venues are within 100m of each other (Pita Jungle at 33.4269, -111.9401 and Gelato Spot at 33.4265, -111.9405), well under the 1200m max walk distance. (5) Vibe: Pita Jungle offers relaxed, casual, health-conscious atmosphere for dinner; Gelato Spot provides a chill dessert spot for the second venue. (6) Party size: Both can accommodate 4 friends. This combination provides a complete night out (dinner + dessert) that's walkable, budget-friendly, vegan-inclusive, and matches the requested chill atmosphere near ASU Tempe.",
+    "legs": [
+      {
+        "distance_m": 58,
+        "minutes": 1,
+        "from_id": "pita_jungle",
+        "to_id": "gelato_spot",
+        "mode": "walk",
+        "verified": false,
+        "source": "straight_line_offline_estimate"
+      }
+    ]
+  },
+  "report": {
+    "checks": {
+      "structure": true,
+      "budget": true,
+      "dietary": true,
+      "hours": true,
+      "travel": true
+    },
+    "details": {
+      "total_pp": 25.0,
+      "arrival_hours": [
+        19,
+        21
+      ]
+    },
+    "score": 1.0,
+    "valid": true
+  },
+  "rejected": [],
+  "attempts": 1,
+  "trace": [
+    {
+      "node": "discovery",
+      "observation": {
+        "candidate_ids": [
+          "pita_jungle",
+          "green_vegetarian",
+          "cornish_pasty",
+          "culinary_dropout",
+          "loco_patron",
+          "house_of_tricks",
+          "chuckbox",
+          "snooze",
+          "gelato_spot",
+          "cartel_coffee",
+          "caseys",
+          "handlebar",
+          "zipps"
+        ]
+      }
+    },
+    {
+      "node": "enrichment",
+      "observation": [
+        {
+          "venue_id": "pita_jungle",
+          "facts": {
+            "price_per_person": 18.0,
+            "close_hour": 22.0,
+            "vegan": true,
+            "vibe": [
+              "relaxed",
+              "casual",
+              "health-conscious"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "green_vegetarian",
+          "facts": {
+            "price_per_person": 16.0,
+            "close_hour": 21.0,
+            "vegan": true,
+            "vibe": [
+              "casual",
+              "chill"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "cornish_pasty",
+          "facts": {
+            "price_per_person": 15.0,
+            "close_hour": 24.0,
+            "vegan": true,
+            "vibe": [
+              "dark",
+              "cozy",
+              "quirky",
+              "cave-like"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "culinary_dropout",
+          "facts": {
+            "price_per_person": 30.0,
+            "close_hour": 23.0,
+            "vegan": null,
+            "vibe": [
+              "lively",
+              "trendy",
+              "loud"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "loco_patron",
+          "facts": {
+            "price_per_person": 21.0,
+            "close_hour": null,
+            "vegan": true,
+            "vibe": [
+              "lively",
+              "festive",
+              "rooftop"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "house_of_tricks",
+          "facts": {
+            "price_per_person": 45.0,
+            "close_hour": null,
+            "vegan": null,
+            "vibe": [
+              "romantic",
+              "quiet",
+              "date-night",
+              "upscale"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "chuckbox",
+          "facts": {
+            "price_per_person": 12.0,
+            "close_hour": 21.0,
+            "vegan": false,
+            "vibe": [
+              "divey",
+              "casual"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "snooze",
+          "facts": {
+            "price_per_person": 18.0,
+            "close_hour": 14.5,
+            "vegan": true,
+            "vibe": [
+              "bright",
+              "casual"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "gelato_spot",
+          "facts": {
+            "price_per_person": 7.0,
+            "close_hour": 23.0,
+            "vegan": true,
+            "vibe": [
+              "chill",
+              "dessert"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "cartel_coffee",
+          "facts": {
+            "price_per_person": 6.0,
+            "close_hour": 22.0,
+            "vegan": true,
+            "vibe": [
+              "chill",
+              "quiet",
+              "hipster"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "caseys",
+          "facts": {
+            "price_per_person": 15.0,
+            "close_hour": 26.0,
+            "vegan": null,
+            "vibe": [
+              "chill",
+              "laid-back",
+              "patio"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "handlebar",
+          "facts": {
+            "price_per_person": 12.5,
+            "close_hour": 26.0,
+            "vegan": null,
+            "vibe": [
+              "lively",
+              "loud",
+              "energetic"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        },
+        {
+          "venue_id": "zipps",
+          "facts": {
+            "price_per_person": 15.0,
+            "close_hour": 24.0,
+            "vegan": null,
+            "vibe": [
+              "sports bar",
+              "lively"
+            ]
+          },
+          "source": "synthetic_annotated_fixture_NOT_live_web_evidence",
+          "cache_hit": false
+        }
+      ]
+    },
+    {
+      "node": "weather",
+      "observation": {
+        "temp_c": 36.9,
+        "precip_prob": 21,
+        "condition": "clear"
+      }
+    },
+    {
+      "node": "planner",
+      "observation": {
+        "stops": [
+          {
+            "venue_id": "pita_jungle"
+          },
+          {
+            "venue_id": "gelato_spot"
+          }
+        ],
+        "reasoning": "This itinerary meets all constraints: (1) Budget: Pita Jungle ($18pp) + Gelato Spot ($7pp) = $25pp total, well under the $40pp budget. (2) Vegan requirement: Both venues are vegan-friendly. (3) Timing: Pita Jungle is open until 22:00, Gelato Spot until 23:00, both accessible around 7pm arrival. (4) Walkability: Both venues are within 100m of each other (Pita Jungle at 33.4269, -111.9401 and Gelato Spot at 33.4265, -111.9405), well under the 1200m max walk distance. (5) Vibe: Pita Jungle offers relaxed, casual, health-conscious atmosphere for dinner; Gelato Spot provides a chill dessert spot for the second venue. (6) Party size: Both can accommodate 4 friends. This combination provides a complete night out (dinner + dessert) that's walkable, budget-friendly, vegan-inclusive, and matches the requested chill atmosphere near ASU Tempe."
+      }
+    },
+    {
+      "node": "transit",
+      "observation": [
+        {
+          "distance_m": 58,
+          "minutes": 1,
+          "from_id": "pita_jungle",
+          "to_id": "gelato_spot",
+          "mode": "walk",
+          "verified": false,
+          "source": "straight_line_offline_estimate"
+        }
+      ]
+    },
+    {
+      "node": "critic",
+      "observation": {
+        "checks": {
+          "structure": true,
+          "budget": true,
+          "dietary": true,
+          "hours": true,
+          "travel": true
+        },
+        "details": {
+          "total_pp": 25.0,
+          "arrival_hours": [
+            19,
+            21
+          ]
+        },
+        "score": 1.0,
+        "valid": true
+      }
+    }
+  ],
+  "status": "valid",
+  "weather": {
+    "temp_c": 36.9,
+    "precip_prob": 21,
+    "condition": "clear"
+  },
+  "metrics": {
+    "llm_calls": 14,
+    "input_tokens": 14723,
+    "output_tokens": 1625,
+    "latency_seconds": 15.369656199996825,
+    "mode": "llm",
+    "estimated_cost_usd": null
+  }
+}

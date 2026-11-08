@@ -20,10 +20,23 @@ DEFAULT_MODELS = {
     "anthropic": "claude-3-5-haiku-latest",
     "google_genai": "gemini-2.0-flash",
     "ollama": "llama3.1",
+    "bedrock_converse": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
 }
 
 
 def get_llm(temperature: float = 0.0):
     provider = os.getenv("LLM_PROVIDER", "openai").strip()
     model = os.getenv("LLM_MODEL", "").strip() or DEFAULT_MODELS.get(provider, "gpt-4o-mini")
+    if provider == "bedrock_converse":
+        from botocore.config import Config
+        from langchain_aws import ChatBedrockConverse
+
+        return ChatBedrockConverse(
+            model_id=model,
+            region_name=os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or "us-east-1",
+            temperature=temperature,
+            max_tokens=2048,
+            config=Config(connect_timeout=10, read_timeout=30,
+                          retries={"total_max_attempts": 2, "mode": "standard"}),
+        )
     return init_chat_model(model, model_provider=provider, temperature=temperature)
